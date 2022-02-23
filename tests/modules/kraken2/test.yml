@@ -1,0 +1,21 @@
+- name: kraken2 test_kraken2
+  command: nextflow run tests/modules/kraken2 -entry test_kraken2 -c tests/config/nextflow.config
+  tags:
+    - kraken2
+  files:
+    - path: output/kraken2/test.kraken.gz
+      md5sum: f5ff810bca47795bb38f525b08f76ad5
+    - path: output/kraken2/test.kreport
+      md5sum: 4227755fe40478b8d7dc8634b489761e
+    - path: output/kraken2/test_classified_1.fastq.gz
+      should_exist: true
+    - path: output/kraken2/test_classified_2.fastq.gz
+      should_exist: true
+    - path: output/kraken2/test_unclassified_1.fastq.gz
+      should_exist: true
+    - path: output/kraken2/test_unclassified_2.fastq.gz
+      should_exist: true
+    - path: output/kraken2/versions.yml
+      md5sum: e8c59537a2b9ef21749df1b392880dda
+    - path: output/untar/versions.yml
+      md5sum: 92392e83e2776f03f64bbbe4c4ec5bc3

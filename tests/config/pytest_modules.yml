@@ -13,3 +13,7 @@ edirect/efetch:
 edirect/esearch:
   - modules/edirect/esearch/**
   - tests/modules/edirect/esearch/**
+
+kraken2:
+  - modules/kraken2/**
+  - tests/modules/kraken2/**
