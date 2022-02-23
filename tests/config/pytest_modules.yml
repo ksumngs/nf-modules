@@ -5,3 +5,7 @@ cliquesnv/illumina:
 cliquesnv/illuminavc:
   - modules/cliquesnv/illuminavc/**
   - tests/modules/cliquesnv/illuminavc/**
+
+edirect/esearch:
+  - modules/edirect/esearch/**
+  - tests/modules/edirect/esearch/**

@@ -1,0 +1,10 @@
+- name: edirect esearch test_edirect_esearch
+  command: nextflow run tests/modules/edirect/esearch -entry test_edirect_esearch -c tests/config/nextflow.config
+  tags:
+    - edirect/esearch
+    - edirect
+  files:
+    - path: output/edirect/search.xml
+      contains: '[ # TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead ]'
+    - path: output/edirect/versions.yml
+      md5sum: ef05a0cca30fc869daf2c7ffb9119082
