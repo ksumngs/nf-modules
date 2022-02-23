@@ -1,0 +1,3 @@
+cliquesnv/illumina:
+  - modules/cliquesnv/illumina/**
+  - tests/modules/cliquesnv/illumina/**
