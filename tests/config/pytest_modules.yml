@@ -6,6 +6,10 @@ cliquesnv/illuminavc:
   - modules/cliquesnv/illuminavc/**
   - tests/modules/cliquesnv/illuminavc/**
 
+edirect/efetch:
+  - modules/edirect/efetch/**
+  - tests/modules/edirect/efetch/**
+
 edirect/esearch:
   - modules/edirect/esearch/**
   - tests/modules/edirect/esearch/**
