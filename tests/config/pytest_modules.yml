@@ -53,3 +53,7 @@ raxmlng/search:
 raxmlng/support:
   - modules/raxmlng/support/**
   - tests/modules/raxmlng/support/**
+
+trimmomatic:
+  - modules/trimmomatic/**
+  - tests/modules/trimmomatic/**
