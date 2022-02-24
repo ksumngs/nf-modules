@@ -33,3 +33,7 @@ minimap2/align:
 nanofilt:
   - modules/nanofilt/**
   - tests/modules/nanofilt/**
+
+nanostat:
+  - modules/nanostat/**
+  - tests/modules/nanostat/**

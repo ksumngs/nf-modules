@@ -1,0 +1,19 @@
+- name: nanostat test_nanostat_fastq
+  command: nextflow run tests/modules/nanostat -entry test_nanostat_fastq -c tests/config/nextflow.config
+  tags:
+    - nanostat
+  files:
+    - path: output/nanostat/test_nanostat.log
+      md5sum: a6d81f0bdface40aa73b9f5d0434f5ea
+    - path: output/nanostat/versions.yml
+      md5sum: 942ad2e1e1e999dbaca50f6a8c93f51e
+
+- name: nanostat test_nanostat_summary
+  command: nextflow run tests/modules/nanostat -entry test_nanostat_summary -c tests/config/nextflow.config
+  tags:
+    - nanostat
+  files:
+    - path: output/nanostat/test_nanostat.log
+      md5sum: dd65c56505d2d9cfec02d1fd5581b005
+    - path: output/nanostat/versions.yml
+      md5sum: 18e3020b8151311d111834998eb9ab41
