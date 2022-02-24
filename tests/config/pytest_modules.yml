@@ -38,6 +38,10 @@ nanostat:
   - modules/nanostat/**
   - tests/modules/nanostat/**
 
+raxmlng/bootstrap:
+  - modules/raxmlng/bootstrap/**
+  - tests/modules/raxmlng/bootstrap/**
+
 raxmlng/parse:
   - modules/raxmlng/parse/**
   - tests/modules/raxmlng/parse/**
