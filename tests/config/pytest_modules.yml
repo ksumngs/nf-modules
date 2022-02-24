@@ -37,3 +37,7 @@ nanofilt:
 nanostat:
   - modules/nanostat/**
   - tests/modules/nanostat/**
+
+raxmlng/parse:
+  - modules/raxmlng/parse/**
+  - tests/modules/raxmlng/parse/**
