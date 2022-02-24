@@ -49,3 +49,7 @@ raxmlng/parse:
 raxmlng/search:
   - modules/raxmlng/search/**
   - tests/modules/raxmlng/search/**
+
+raxmlng/support:
+  - modules/raxmlng/support/**
+  - tests/modules/raxmlng/support/**

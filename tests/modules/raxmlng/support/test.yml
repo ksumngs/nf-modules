@@ -1,0 +1,14 @@
+- name: raxmlng support test_raxmlng_support
+  command: nextflow run tests/modules/raxmlng/support -entry test_raxmlng_support -c tests/config/nextflow.config
+  tags:
+    - raxmlng/support
+    - raxmlng
+  files:
+    - path: output/raxmlng/informative_sites.fas.raxml.bestTree
+      md5sum: 0fc888c87cf6c0f5d2d3ba01db8525f1
+    - path: output/raxmlng/informative_sites.fas.raxml.bestTree.raxml.support
+      md5sum: f9ffdcba772a9e9b1e3705b3b3ab256d
+    - path: output/raxmlng/informative_sites.fas.raxml.bootstraps
+      md5sum: a358b727272abc17e6e91f5e478d3533
+    - path: output/raxmlng/versions.yml
+      md5sum: 8e7ca4cb08d54a8d70f6191dcd371ca8
