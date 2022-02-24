@@ -21,3 +21,7 @@ kraken2:
 krakentools/extract:
   - modules/krakentools/extract/**
   - tests/modules/krakentools/extract/**
+
+mafft:
+  - modules/mafft/**
+  - tests/modules/mafft/**
