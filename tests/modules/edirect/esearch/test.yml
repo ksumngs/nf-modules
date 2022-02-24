@@ -5,6 +5,7 @@
     - edirect
   files:
     - path: output/edirect/search.xml
-      contains: '<ENTREZ_DIRECT>'
+      contains:
+        - '<ENTREZ_DIRECT>'
     - path: output/edirect/versions.yml
       md5sum: ef05a0cca30fc869daf2c7ffb9119082
