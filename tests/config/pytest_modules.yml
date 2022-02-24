@@ -41,3 +41,7 @@ nanostat:
 raxmlng/parse:
   - modules/raxmlng/parse/**
   - tests/modules/raxmlng/parse/**
+
+raxmlng/search:
+  - modules/raxmlng/search/**
+  - tests/modules/raxmlng/search/**
