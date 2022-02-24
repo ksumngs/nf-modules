@@ -17,3 +17,7 @@ edirect/esearch:
 kraken2:
   - modules/kraken2/**
   - tests/modules/kraken2/**
+
+krakentools/extract:
+  - modules/krakentools/extract/**
+  - tests/modules/krakentools/extract/**
