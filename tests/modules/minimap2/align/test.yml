@@ -1,0 +1,8 @@
+- name: minimap2 align
+  command: nextflow run ./tests/modules/minimap2/align -entry test_minimap2_align -c ./tests/config/nextflow.config -c ./tests/modules/minimap2/align/nextflow.config
+  tags:
+    - minimap2
+    - minimap2/align
+  files:
+    - path: ./output/minimap2/test.paf
+      md5sum: 5e7b55a26bf0ea3a2843423d3e0b9a28

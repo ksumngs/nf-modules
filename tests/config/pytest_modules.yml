@@ -25,3 +25,7 @@ krakentools/extract:
 mafft:
   - modules/mafft/**
   - tests/modules/mafft/**
+
+minimap2/align:
+  - modules/minimap2/align/**
+  - tests/modules/minimap2/align/**
