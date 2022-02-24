@@ -29,3 +29,7 @@ mafft:
 minimap2/align:
   - modules/minimap2/align/**
   - tests/modules/minimap2/align/**
+
+nanofilt:
+  - modules/nanofilt/**
+  - tests/modules/nanofilt/**
