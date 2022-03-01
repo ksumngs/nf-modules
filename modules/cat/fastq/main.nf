@@ -6,6 +6,7 @@
 // 1. To use a non-Busybox container
 // 2. To join files regardless of number of original files
 // 3. To allow a mix of gzipped and non-gzipped files
+// 4. To give the option of gzipped output
 // #2 is a consequence of #3: a single non-gzipped file needs to be gzipped in the
 // output
 process CAT_FASTQ {
@@ -19,9 +20,10 @@ process CAT_FASTQ {
 
     input:
     tuple val(meta), path(reads, stageAs: "input*/*")
+    val(gzipped)
 
     output:
-    tuple val(meta), path("*.merged.fastq.gz"), emit: reads
+    tuple val(meta), path("*.merged.fastq*"), emit: reads
     path "versions.yml"                       , emit: versions
 
     when:
@@ -30,10 +32,12 @@ process CAT_FASTQ {
     script:
     def args = task.ext.args ?: ''
     def prefix = task.ext.prefix ?: "${meta.id}"
+    def zipcmd = (gzipped) ? '| gzip' : ''
+    def ext = (gzipped) ? 'fastq.gz' : 'fastq'
     def readList = reads.collect{ it.toString() }
     if (meta.single_end) {
         """
-        zcat -f ${readList.join(' ')} | gzip > ${prefix}.merged.fastq.gz
+        zcat -f ${readList.join(' ')} ${zipcmd} > ${prefix}.merged.${ext}
 
         cat <<-END_VERSIONS > versions.yml
         "${task.process}":
@@ -45,8 +49,8 @@ process CAT_FASTQ {
         def read2 = []
         readList.eachWithIndex{ v, ix -> ( ix & 1 ? read2 : read1 ) << v }
         """
-        zcat -f ${read1.join(' ')} | gzip > ${prefix}_1.merged.fastq.gz
-        zcat -f ${read2.join(' ')} | gzip > ${prefix}_2.merged.fastq.gz
+        zcat -f ${read1.join(' ')} ${zipcmd} > ${prefix}_1.merged.${ext}
+        zcat -f ${read2.join(' ')} ${zipcmd} > ${prefix}_2.merged.${ext}
 
         cat <<-END_VERSIONS > versions.yml
         "${task.process}":
