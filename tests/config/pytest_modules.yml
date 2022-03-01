@@ -1,3 +1,7 @@
+cat/fastq:
+  - modules/cat/fastq/**
+  - tests/modules/cat/fastq/**
+
 cliquesnv/illumina:
   - modules/cliquesnv/illumina/**
   - tests/modules/cliquesnv/illumina/**
