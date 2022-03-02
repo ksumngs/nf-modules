@@ -6,10 +6,11 @@
 
 You'll need [nf-core tools]. Using our modules is basically the same as using
 vanilla [`nf-core modules`], but just add
-`-g 'https://github.com/ksumngs/nf-modules'` to each command.
+`-g ksumngs/nf-modules` to each command.
 
 ```shellsession
-$ nf-core modules -g 'https://github.com/ksumngs/nf-modules' list remote
+$ nf-core modules -g ksumngs/nf-modules list remote
+
                                           ,--./,-.
           ___     __   __   __   ___     /,-._.--~\
     |\ | |__  __ /  ` /  \ |__) |__         }  {
@@ -20,13 +21,15 @@ $ nf-core modules -g 'https://github.com/ksumngs/nf-modules' list remote
 
 
 
-INFO     Modules available from ksumngs/nf-modules (master):                                                                                                                                                               list.py:123
-                                                                                                                                                                                                                                   
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃ Module Name                          ┃
-┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
-│ blast/makeblastdb                    │
-│ krakentools/extract                  │
+INFO     Modules available from ksumngs/nf-modules (master):    list.py:123
+
+┏━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Module Name          ┃
+┡━━━━━━━━━━━━━━━━━━━━━━┩
+│ cat/fastq            │
+│ cliquesnv/illumina   │
+│ cliquesnv/illuminavc │
+│ edirect/efetch       │
 ...
 ```
 
