@@ -3,7 +3,7 @@
   tags:
     - trimmomatic
   files:
-    - path: output/trimmomatic/test.trimmomatic.log
+    - path: output/trimmomatic/test.log
       md5sum: f04b51db3365f317c3ef02f7ad6967c9
     - path: output/trimmomatic/test_trimmed_R1.fastq.gz
       md5sum: 1af580083809f12bfecbb51b1fe409e1
