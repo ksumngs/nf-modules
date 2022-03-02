@@ -35,9 +35,12 @@ process CAT_FASTQ {
     def zipcmd = (gzipped) ? '| gzip' : ''
     def ext = (gzipped) ? 'fastq.gz' : 'fastq'
     def readList = reads.collect{ it.toString() }
+    // Edge case: single-end, single file creates a readList with the directory
+    // as the first entry
+    def joiner = (readList[0] == 'input1') ? '/' : ' '
     if (meta.single_end) {
         """
-        zcat -f ${readList.join(' ')} ${zipcmd} > ${prefix}.merged.${ext}
+        zcat -f ${readList.join(joiner)} ${zipcmd} > ${prefix}.merged.${ext}
 
         cat <<-END_VERSIONS > versions.yml
         "${task.process}":
@@ -49,8 +52,8 @@ process CAT_FASTQ {
         def read2 = []
         readList.eachWithIndex{ v, ix -> ( ix & 1 ? read2 : read1 ) << v }
         """
-        zcat -f ${read1.join(' ')} ${zipcmd} > ${prefix}_1.merged.${ext}
-        zcat -f ${read2.join(' ')} ${zipcmd} > ${prefix}_2.merged.${ext}
+        zcat -f ${read1.join(joiner)} ${zipcmd} > ${prefix}_1.merged.${ext}
+        zcat -f ${read2.join(joiner)} ${zipcmd} > ${prefix}_2.merged.${ext}
 
         cat <<-END_VERSIONS > versions.yml
         "${task.process}":
