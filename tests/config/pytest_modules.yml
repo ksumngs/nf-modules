@@ -26,6 +26,10 @@ krakentools/extract:
   - modules/krakentools/extract/**
   - tests/modules/krakentools/extract/**
 
+krakentools/kreport2krona:
+  - modules/krakentools/kreport2krona/**
+  - tests/modules/krakentools/kreport2krona/**
+
 minimap2/align:
   - modules/minimap2/align/**
   - tests/modules/minimap2/align/**
