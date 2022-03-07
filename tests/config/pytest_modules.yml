@@ -30,6 +30,10 @@ krakentools/kreport2krona:
   - modules/krakentools/kreport2krona/**
   - tests/modules/krakentools/kreport2krona/**
 
+krona/importtext:
+  - modules/krona/importtext/**
+  - tests/modules/krona/importtext/**
+
 minimap2/align:
   - modules/minimap2/align/**
   - tests/modules/minimap2/align/**
