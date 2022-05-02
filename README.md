@@ -34,6 +34,6 @@ INFO     Modules available from ksumngs/nf-modules (master):    list.py:123
 ```
 
 [nf-core]: https://nf-co.re
-[Nextflow modules]: https://nextflow.io/docs/latest/dsl2.html#modules
+[nextflow modules]: https://nextflow.io/docs/latest/dsl2.html#modules
 [nf-core tools]: https://nf-co.re/tools
 [`nf-core modules`]: https://nf-co.re/tools/#modules

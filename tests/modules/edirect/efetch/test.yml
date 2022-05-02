@@ -8,6 +8,6 @@
       md5sum: 3808231e21e60f1378cc16ae3f53e6c1
     - path: output/edirect/search.xml
       contains:
-        - '<ENTREZ_DIRECT>'
+        - "<ENTREZ_DIRECT>"
     - path: output/edirect/versions.yml
       md5sum: 12b2048c1d153f32b4a4c02d03367b63

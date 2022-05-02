@@ -6,8 +6,8 @@
   files:
     - path: output/cat/test.merged.fastq.gz
       contains:
-        - '@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/1'
-        - '@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/1'
+        - "@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/1"
+        - "@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/1"
 
 - name: cat fastq test_cat_fastq_paired_end_gzipped
   command: nextflow run tests/modules/cat/fastq -entry test_cat_fastq_paired_end_gzipped -c tests/config/nextflow.config
@@ -17,12 +17,12 @@
   files:
     - path: output/cat/test_1.merged.fastq.gz
       contains:
-        - '@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/1'
-        - '@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/1'
+        - "@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/1"
+        - "@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/1"
     - path: output/cat/test_2.merged.fastq.gz
       contains:
-        - '@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/2'
-        - '@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/2'
+        - "@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/2"
+        - "@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/2"
 
 - name: cat fastq test_cat_fastq_single_end_same_name_gzipped
   command: nextflow run tests/modules/cat/fastq -entry test_cat_fastq_single_end_same_name_gzipped -c tests/config/nextflow.config
@@ -32,8 +32,8 @@
   files:
     - path: output/cat/test.merged.fastq.gz
       contains:
-        - '@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/1'
-        - '@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/1'
+        - "@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/1"
+        - "@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/1"
 
 - name: cat fastq test_cat_fastq_paired_end_same_name_gzipped
   command: nextflow run tests/modules/cat/fastq -entry test_cat_fastq_paired_end_same_name_gzipped -c tests/config/nextflow.config
@@ -43,12 +43,12 @@
   files:
     - path: output/cat/test_1.merged.fastq.gz
       contains:
-        - '@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/1'
-        - '@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/1'
+        - "@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/1"
+        - "@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/1"
     - path: output/cat/test_2.merged.fastq.gz
       contains:
-        - '@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/2'
-        - '@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/2'
+        - "@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/2"
+        - "@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/2"
 
 - name: cat fastq test_cat_fastq_single_end_uncompressed
   command: nextflow run tests/modules/cat/fastq -entry test_cat_fastq_single_end_uncompressed -c tests/config/nextflow.config
