@@ -2,6 +2,10 @@ cat/fastq:
   - modules/cat/fastq/**
   - tests/modules/cat/fastq/**
 
+cliquesnv/consensusillumina:
+  - modules/cliquesnv/consensusillumina/**
+  - tests/modules/cliquesnv/consensusillumina/**
+
 cliquesnv/illumina:
   - modules/cliquesnv/illumina/**
   - tests/modules/cliquesnv/illumina/**
