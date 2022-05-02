@@ -1,51 +1,41 @@
-name: "cliquesnv_consensusillumina"
-## TODO nf-core: Add a description of the module and list keywords
-description: write your description here
+name: cliquesnv_consensusillumina
+description: Utility method to calculate consensus string base from reconstruction of Intra-Host Viral Populations with Illumina reads
 keywords:
-  - sort
+  - viral
+  - consensus
+  - illumina
 tools:
-  - "cliquesnv":
-      ## TODO nf-core: Add a description and other details for the software below
+  - cliquesnv:
       description: "Scalable Reconstruction of Intra-Host Viral Populations from NGS Reads"
-      homepage: "None"
-      documentation: "None"
-      tool_dev_url: "None"
-      doi: ""
-      licence: "['MIT']"
+      homepage: https://github.com/vtsyvina/CliqueSNV
+      doi: "10.1093/nar/gkab576"
+      licence: ["MIT"]
 
-## TODO nf-core: Add a description of all of the variables used as input
 input:
-  # Only when we have meta
   - meta:
       type: map
       description: |
         Groovy Map containing sample information
         e.g. [ id:'test', single_end:false ]
-  # 
-  ## TODO nf-core: Delete / customise this example input
   - bam:
       type: file
-      description: BAM/CRAM/SAM file
-      pattern: "*.{bam,cram,sam}"
+      description: Sorted bam file to call variants from
+      pattern: "*.bam"
 
-## TODO nf-core: Add a description of all of the variables used as output
 output:
-  #Only when we have meta
   - meta:
       type: map
       description: |
         Groovy Map containing sample information
         e.g. [ id:'test', single_end:false ]
-  # 
   - versions:
       type: file
       description: File containing software versions
       pattern: "versions.yml"
-  ## TODO nf-core: Delete / customise this example output
-  - bam:
+  - fasta:
       type: file
-      description: Sorted BAM/CRAM/SAM file
-      pattern: "*.{bam,cram,sam}"
+      description: Consensus sequence in FASTA format
+      pattern: "*.{fasta}"
 
 authors:
   - "@MillironX"
