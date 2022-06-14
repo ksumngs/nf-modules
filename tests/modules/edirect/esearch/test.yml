@@ -7,3 +7,5 @@
     - path: output/edirect/search.xml
       contains:
         - "<ENTREZ_DIRECT>"
+        - "<Db>nucleotide</Db>"
+        - "<WebEnv>"
