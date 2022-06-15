@@ -1,7 +1,7 @@
 process EDIRECT_EFETCH {
     tag "$search"
-    label 'run_local'
     label 'process_low'
+    label 'run_local'
     label 'error_backoff'
 
     conda (params.enable_conda ? "bioconda::entrez-direct=16.2" : null)
