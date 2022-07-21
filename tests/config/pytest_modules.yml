@@ -22,6 +22,10 @@ edirect/esearch:
   - modules/edirect/esearch/**
   - tests/modules/edirect/esearch/**
 
+emboss/seqret:
+  - modules/emboss/seqret/**
+  - tests/modules/emboss/seqret/**
+
 kraken2:
   - modules/kraken2/**
   - tests/modules/kraken2/**
