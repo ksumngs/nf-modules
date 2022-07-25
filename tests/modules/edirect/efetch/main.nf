@@ -7,7 +7,12 @@ include { EDIRECT_ESEARCH } from '../../../../modules/edirect/esearch/main.nf'
 
 workflow test_edirect_efetch {
 
-    EDIRECT_ESEARCH ( 'NC_045512.2', 'nucleotide' )
+    input = [
+        [ id: 'test' ],
+        'NC_045512.2'
+    ]
+
+    EDIRECT_ESEARCH ( input, 'nucleotide' )
 
     EDIRECT_EFETCH ( EDIRECT_ESEARCH.out.xml, 'gb', 'xml' )
 }
