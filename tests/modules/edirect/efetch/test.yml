@@ -1,8 +1,8 @@
 - name: edirect efetch test_edirect_efetch
-  command: nextflow run tests/modules/edirect/efetch -entry test_edirect_efetch -c tests/config/nextflow.config
+  command: nextflow run ./tests/modules/edirect/efetch -entry test_edirect_efetch -c ./tests/config/nextflow.config  -c ./tests/modules/edirect/efetch/nextflow.config
   tags:
-    - edirect
     - edirect/efetch
+    - edirect
   files:
-    - path: output/edirect/result.xml
+    - path: output/edirect/test.xml
       md5sum: 3808231e21e60f1378cc16ae3f53e6c1
