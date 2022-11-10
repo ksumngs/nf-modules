@@ -42,10 +42,6 @@ krona/importtext:
   - modules/krona/importtext/**
   - tests/modules/krona/importtext/**
 
-minimap2/align:
-  - modules/minimap2/align/**
-  - tests/modules/minimap2/align/**
-
 nanofilt:
   - modules/nanofilt/**
   - tests/modules/nanofilt/**
