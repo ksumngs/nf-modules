@@ -2,7 +2,7 @@
 
 nextflow.enable.dsl = 2
 
-include { EDIRECT_ESEARCH } from '../../../../modules/ksumngs/edirect/esearch/main.nf'
+include { EDIRECT_ESEARCH } from '../../../../../modules/ksumngs/edirect/esearch/main.nf'
 
 workflow test_edirect_esearch {
 

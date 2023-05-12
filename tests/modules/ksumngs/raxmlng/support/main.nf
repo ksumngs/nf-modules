@@ -2,9 +2,9 @@
 
 nextflow.enable.dsl = 2
 
-include { RAXMLNG_BOOTSTRAP } from '../../../../modules/ksumngs/raxmlng/bootstrap/main.nf'
-include { RAXMLNG_SEARCH } from '../../../../modules/ksumngs/raxmlng/search/main.nf'
-include { RAXMLNG_SUPPORT } from '../../../../modules/ksumngs/raxmlng/support/main.nf'
+include { RAXMLNG_BOOTSTRAP } from '../../../../../modules/ksumngs/raxmlng/bootstrap/main.nf'
+include { RAXMLNG_SEARCH } from '../../../../../modules/ksumngs/raxmlng/search/main.nf'
+include { RAXMLNG_SUPPORT } from '../../../../../modules/ksumngs/raxmlng/support/main.nf'
 
 workflow test_raxmlng_support {
 

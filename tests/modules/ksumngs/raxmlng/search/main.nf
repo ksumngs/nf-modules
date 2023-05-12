@@ -2,7 +2,7 @@
 
 nextflow.enable.dsl = 2
 
-include { RAXMLNG_SEARCH } from '../../../../modules/ksumngs/raxmlng/search/main.nf'
+include { RAXMLNG_SEARCH } from '../../../../../modules/ksumngs/raxmlng/search/main.nf'
 
 workflow test_raxmlng_search {
 

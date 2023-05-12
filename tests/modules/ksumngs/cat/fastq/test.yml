@@ -1,0 +1,93 @@
+- name: cat fastq test_cat_fastq_single_end_gzipped
+  command: nextflow run ./tests/modules/ksumngs/cat/fastq -entry test_cat_fastq_single_end_gzipped -c ./tests/config/nextflow.config -c ./tests/modules/ksumngs/cat/fastq/nextflow.config
+  tags:
+    - cat/fastq
+    - cat
+  files:
+    - path: output/cat/test.merged.fastq.gz
+      contains:
+        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
+    - path: output/cat/versions.yml
+
+- name: cat fastq test_cat_fastq_paired_end_gzipped
+  command: nextflow run ./tests/modules/ksumngs/cat/fastq -entry test_cat_fastq_paired_end_gzipped -c ./tests/config/nextflow.config -c ./tests/modules/ksumngs/cat/fastq/nextflow.config
+  tags:
+    - cat/fastq
+    - cat
+  files:
+    - path: output/cat/test_1.merged.fastq.gz
+      contains:
+        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
+    - path: output/cat/test_2.merged.fastq.gz
+      contains:
+        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
+    - path: output/cat/versions.yml
+
+- name: cat fastq test_cat_fastq_single_end_same_name_gzipped
+  command: nextflow run ./tests/modules/ksumngs/cat/fastq -entry test_cat_fastq_single_end_same_name_gzipped -c ./tests/config/nextflow.config -c ./tests/modules/ksumngs/cat/fastq/nextflow.config
+  tags:
+    - cat/fastq
+    - cat
+  files:
+    - path: output/cat/test.merged.fastq.gz
+      contains:
+        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
+    - path: output/cat/versions.yml
+
+- name: cat fastq test_cat_fastq_paired_end_same_name_gzipped
+  command: nextflow run ./tests/modules/ksumngs/cat/fastq -entry test_cat_fastq_paired_end_same_name_gzipped -c ./tests/config/nextflow.config -c ./tests/modules/ksumngs/cat/fastq/nextflow.config
+  tags:
+    - cat/fastq
+    - cat
+  files:
+    - path: output/cat/test_1.merged.fastq.gz
+      contains:
+        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
+    - path: output/cat/test_2.merged.fastq.gz
+      contains:
+        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
+    - path: output/cat/versions.yml
+
+- name: cat fastq test_cat_fastq_single_end_uncompressed
+  command: nextflow run ./tests/modules/ksumngs/cat/fastq -entry test_cat_fastq_single_end_uncompressed -c ./tests/config/nextflow.config -c ./tests/modules/ksumngs/cat/fastq/nextflow.config
+  tags:
+    - cat/fastq
+    - cat
+  files:
+    - path: output/cat/test.merged.fastq
+      md5sum: 3ad9406595fafec8172368f9cd0b6a22
+    - path: output/cat/versions.yml
+
+- name: cat fastq test_cat_fastq_paired_end_uncompressed
+  command: nextflow run ./tests/modules/ksumngs/cat/fastq -entry test_cat_fastq_paired_end_uncompressed -c ./tests/config/nextflow.config -c ./tests/modules/ksumngs/cat/fastq/nextflow.config
+  tags:
+    - cat/fastq
+    - cat
+  files:
+    - path: output/cat/test_1.merged.fastq
+      md5sum: 3ad9406595fafec8172368f9cd0b6a22
+    - path: output/cat/test_2.merged.fastq
+      md5sum: a52cab0b840c7178b0ea83df1fdbe8d5
+    - path: output/cat/versions.yml
+
+- name: cat fastq test_cat_fastq_single_end_same_name_uncompressed
+  command: nextflow run ./tests/modules/ksumngs/cat/fastq -entry test_cat_fastq_single_end_same_name_uncompressed -c ./tests/config/nextflow.config -c ./tests/modules/ksumngs/cat/fastq/nextflow.config
+  tags:
+    - cat/fastq
+    - cat
+  files:
+    - path: output/cat/test.merged.fastq
+      md5sum: 3ad9406595fafec8172368f9cd0b6a22
+    - path: output/cat/versions.yml
+
+- name: cat fastq test_cat_fastq_paired_end_same_name_uncompressed
+  command: nextflow run ./tests/modules/ksumngs/cat/fastq -entry test_cat_fastq_paired_end_same_name_uncompressed -c ./tests/config/nextflow.config -c ./tests/modules/ksumngs/cat/fastq/nextflow.config
+  tags:
+    - cat/fastq
+    - cat
+  files:
+    - path: output/cat/test_1.merged.fastq
+      md5sum: 3ad9406595fafec8172368f9cd0b6a22
+    - path: output/cat/test_2.merged.fastq
+      md5sum: a52cab0b840c7178b0ea83df1fdbe8d5
+    - path: output/cat/versions.yml

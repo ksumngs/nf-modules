@@ -2,7 +2,7 @@
 
 nextflow.enable.dsl = 2
 
-include { RAXMLNG_BOOTSTRAP } from '../../../../modules/ksumngs/raxmlng/bootstrap/main.nf'
+include { RAXMLNG_BOOTSTRAP } from '../../../../../modules/ksumngs/raxmlng/bootstrap/main.nf'
 
 workflow test_raxmlng_bootstrap {
 

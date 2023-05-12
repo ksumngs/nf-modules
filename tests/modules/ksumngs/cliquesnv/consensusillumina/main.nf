@@ -2,7 +2,7 @@
 
 nextflow.enable.dsl = 2
 
-include { CLIQUESNV_CONSENSUSILLUMINA } from '../../../../modules/ksumngs/cliquesnv/consensusillumina/main.nf'
+include { CLIQUESNV_CONSENSUSILLUMINA } from '../../../../../modules/ksumngs/cliquesnv/consensusillumina/main.nf'
 
 workflow test_cliquesnv_consensusillumina {
     

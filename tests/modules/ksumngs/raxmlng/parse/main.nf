@@ -2,7 +2,7 @@
 
 nextflow.enable.dsl = 2
 
-include { RAXMLNG_PARSE } from '../../../../modules/ksumngs/raxmlng/parse/main.nf'
+include { RAXMLNG_PARSE } from '../../../../../modules/ksumngs/raxmlng/parse/main.nf'
 
 workflow test_raxmlng_parse {
 

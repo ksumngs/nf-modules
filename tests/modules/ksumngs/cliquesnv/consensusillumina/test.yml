@@ -1,5 +1,5 @@
 - name: cliquesnv consensusillumina test_cliquesnv_consensusillumina
-  command: nextflow run tests/modules/cliquesnv/consensusillumina -entry test_cliquesnv_consensusillumina -c tests/config/nextflow.config
+  command: nextflow run ./tests/modules/ksumngs/cliquesnv/consensusillumina -entry test_cliquesnv_consensusillumina -c ./tests/config/nextflow.config -c ./tests/modules/ksumngs/cliquesnv/consensusillumina/nextflow.config
   tags:
     - cliquesnv
     - cliquesnv/consensusillumina
@@ -7,4 +7,3 @@
     - path: output/cliquesnv/test.paired_end_consensus.fasta
       md5sum: a8bfc10016702554133d6ce4323850d0
     - path: output/cliquesnv/versions.yml
-      md5sum: 765e8ab8800fed92cc54759232b7767c

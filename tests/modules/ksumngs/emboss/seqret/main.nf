@@ -2,7 +2,7 @@
 
 nextflow.enable.dsl = 2
 
-include { EMBOSS_SEQRET } from '../../../../modules/ksumngs/emboss/seqret/main.nf'
+include { EMBOSS_SEQRET } from '../../../../../modules/ksumngs/emboss/seqret/main.nf'
 include { GUNZIP } from '../../../modules/gunzip/main.nf'
 
 workflow test_emboss_seqret_gb2embl {

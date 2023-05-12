@@ -2,7 +2,7 @@
 
 nextflow.enable.dsl = 2
 
-include { CLIQUESNV_ILLUMINAVC } from '../../../../modules/ksumngs/cliquesnv/illuminavc/main.nf'
+include { CLIQUESNV_ILLUMINAVC } from '../../../../../modules/ksumngs/cliquesnv/illuminavc/main.nf'
 
 workflow test_cliquesnv_illuminavc {
     
