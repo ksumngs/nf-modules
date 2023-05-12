@@ -2,7 +2,7 @@
 
 nextflow.enable.dsl = 2
 
-include { NANOSTAT } from '../../../modules/nanostat/main.nf'
+include { NANOSTAT } from '../../../../modules/ksumngs/nanostat/main.nf'
 
 workflow test_nanostat_fastq {
 

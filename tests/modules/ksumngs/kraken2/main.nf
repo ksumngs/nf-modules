@@ -2,8 +2,8 @@
 
 nextflow.enable.dsl = 2
 
-include { UNTAR } from '../../../modules/untar/main.nf'
-include { KRAKEN2 } from '../../../modules/kraken2/main.nf'
+include { UNTAR } from '../../../../modules/ksumngs/untar/main.nf'
+include { KRAKEN2 } from '../../../../modules/ksumngs/kraken2/main.nf'
 
 workflow test_kraken2 {
 

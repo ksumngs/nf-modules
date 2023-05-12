@@ -2,7 +2,7 @@
 
 nextflow.enable.dsl = 2
 
-include { TRIMMOMATIC } from '../../../modules/trimmomatic/main.nf'
+include { TRIMMOMATIC } from '../../../../modules/ksumngs/trimmomatic/main.nf'
 
 workflow test_trimmomatic_pe {
 

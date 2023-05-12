@@ -2,7 +2,7 @@
 
 nextflow.enable.dsl = 2
 
-include { NANOFILT } from '../../../modules/nanofilt/main.nf'
+include { NANOFILT } from '../../../../modules/ksumngs/nanofilt/main.nf'
 
 workflow test_nanofilt {
 

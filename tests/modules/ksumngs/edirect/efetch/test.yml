@@ -1,8 +1,9 @@
 - name: edirect efetch test_edirect_efetch
-  command: nextflow run ./tests/modules/ksumngs/edirect/efetch -entry test_edirect_efetch -c ./tests/config/nextflow.config  -c ./tests/modules/ksumngs/edirect/efetch/nextflow.config
+  command: nextflow run ./tests/modules/ksumngs/edirect/efetch -entry test_edirect_efetch -c ./tests/config/nextflow.config -c ./tests/modules/ksumngs/edirect/efetch/nextflow.config
   tags:
-    - edirect/efetch
     - edirect
+    - edirect/efetch
   files:
     - path: output/edirect/test.xml
-      md5sum: 3808231e21e60f1378cc16ae3f53e6c1
+      md5sum: d8b77f6dc833be6bc4600c3cd8ca3eb4
+    - path: output/edirect/versions.yml
