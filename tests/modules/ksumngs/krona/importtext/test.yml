@@ -1,5 +1,5 @@
 - name: krona importtext test_krona_importtext
-  command: nextflow run tests/modules/krona/importtext -entry test_krona_importtext -c tests/config/nextflow.config
+  command: nextflow run tests/modules/ksumngs/krona/importtext -entry test_krona_importtext -c tests/config/nextflow.config
   tags:
     - krona
     - krona/importtext

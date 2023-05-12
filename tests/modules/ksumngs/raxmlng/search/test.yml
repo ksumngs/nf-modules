@@ -1,5 +1,5 @@
 - name: raxmlng search test_raxmlng_search
-  command: nextflow run tests/modules/raxmlng/search -entry test_raxmlng_search -c tests/config/nextflow.config
+  command: nextflow run tests/modules/ksumngs/raxmlng/search -entry test_raxmlng_search -c tests/config/nextflow.config
   tags:
     - raxmlng
     - raxmlng/search

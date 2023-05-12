@@ -1,5 +1,5 @@
 - name: cat fastq test_cat_fastq_single_end
-  command: nextflow run tests/modules/cat/fastq -entry test_cat_fastq_single_end -c tests/config/nextflow.config
+  command: nextflow run tests/modules/ksumngs/cat/fastq -entry test_cat_fastq_single_end -c tests/config/nextflow.config
   tags:
     - cat/fastq
     - cat
@@ -9,7 +9,7 @@
         - '@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/1'
         - '@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/1'
 - name: cat fastq test_cat_fastq_paired_end
-  command: nextflow run tests/modules/cat/fastq -entry test_cat_fastq_paired_end -c tests/config/nextflow.config
+  command: nextflow run tests/modules/ksumngs/cat/fastq -entry test_cat_fastq_paired_end -c tests/config/nextflow.config
   tags:
     - cat/fastq
     - cat
@@ -24,7 +24,7 @@
         - '@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/2'
 
 - name: cat fastq test_cat_fastq_single_end_same_name
-  command: nextflow run tests/modules/cat/fastq -entry test_cat_fastq_single_end_same_name -c tests/config/nextflow.config
+  command: nextflow run tests/modules/ksumngs/cat/fastq -entry test_cat_fastq_single_end_same_name -c tests/config/nextflow.config
   tags:
     - cat/fastq
     - cat
@@ -35,7 +35,7 @@
         - '@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/1'
 
 - name: cat fastq test_cat_fastq_paired_end_same_name
-  command: nextflow run tests/modules/cat/fastq -entry test_cat_fastq_paired_end_same_name -c tests/config/nextflow.config
+  command: nextflow run tests/modules/ksumngs/cat/fastq -entry test_cat_fastq_paired_end_same_name -c tests/config/nextflow.config
   tags:
     - cat/fastq
     - cat

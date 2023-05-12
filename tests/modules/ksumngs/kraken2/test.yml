@@ -1,5 +1,5 @@
 - name: kraken2 test_kraken2
-  command: nextflow run tests/modules/kraken2 -entry test_kraken2 -c tests/config/nextflow.config
+  command: nextflow run tests/modules/ksumngs/kraken2 -entry test_kraken2 -c tests/config/nextflow.config
   tags:
     - kraken2
   files:

@@ -1,5 +1,5 @@
 - name: trimmomatic test_trimmomatic_pe
-  command: nextflow run tests/modules/trimmomatic -entry test_trimmomatic_pe -c tests/config/nextflow.config
+  command: nextflow run tests/modules/ksumngs/trimmomatic -entry test_trimmomatic_pe -c tests/config/nextflow.config
   tags:
     - trimmomatic
   files:
@@ -11,7 +11,7 @@
       md5sum: adb1f37e0e3ab0b96e46e79abee8b715
 
 - name: trimmomatic test_trimmomatic_se
-  command: nextflow run tests/modules/trimmomatic -entry test_trimmomatic_se -c tests/config/nextflow.config
+  command: nextflow run tests/modules/ksumngs/trimmomatic -entry test_trimmomatic_se -c tests/config/nextflow.config
   tags:
     - trimmomatic
   files:

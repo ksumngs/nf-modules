@@ -1,5 +1,5 @@
 - name: nanofilt test_nanofilt
-  command: nextflow run tests/modules/nanofilt -entry test_nanofilt -c tests/config/nextflow.config
+  command: nextflow run tests/modules/ksumngs/nanofilt -entry test_nanofilt -c tests/config/nextflow.config
   tags:
     - nanofilt
   files:

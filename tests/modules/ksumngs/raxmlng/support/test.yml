@@ -1,5 +1,5 @@
 - name: raxmlng support test_raxmlng_support
-  command: nextflow run tests/modules/raxmlng/support -entry test_raxmlng_support -c tests/config/nextflow.config
+  command: nextflow run tests/modules/ksumngs/raxmlng/support -entry test_raxmlng_support -c tests/config/nextflow.config
   tags:
     - raxmlng/support
     - raxmlng

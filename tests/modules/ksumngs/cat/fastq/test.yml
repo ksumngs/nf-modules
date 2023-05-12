@@ -6,7 +6,8 @@
   files:
     - path: output/cat/test.merged.fastq.gz
       contains:
-        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
+        - "@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/1"
+        - "@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/1"
     - path: output/cat/versions.yml
 
 - name: cat fastq test_cat_fastq_paired_end_gzipped
@@ -17,10 +18,12 @@
   files:
     - path: output/cat/test_1.merged.fastq.gz
       contains:
-        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
+        - "@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/1"
+        - "@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/1"
     - path: output/cat/test_2.merged.fastq.gz
       contains:
-        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
+        - "@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/2"
+        - "@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/2"
     - path: output/cat/versions.yml
 
 - name: cat fastq test_cat_fastq_single_end_same_name_gzipped
@@ -31,7 +34,8 @@
   files:
     - path: output/cat/test.merged.fastq.gz
       contains:
-        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
+        - "@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/1"
+        - "@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/1"
     - path: output/cat/versions.yml
 
 - name: cat fastq test_cat_fastq_paired_end_same_name_gzipped
@@ -42,10 +46,12 @@
   files:
     - path: output/cat/test_1.merged.fastq.gz
       contains:
-        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
+        - "@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/1"
+        - "@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/1"
     - path: output/cat/test_2.merged.fastq.gz
       contains:
-        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
+        - "@ERR5069949.2151832 NS500628:121:HK3MMAFX2:2:21208:10793:15304/2"
+        - "@ERR5069949.2415814 NS500628:121:HK3MMAFX2:1:11107:11754:7444/2"
     - path: output/cat/versions.yml
 
 - name: cat fastq test_cat_fastq_single_end_uncompressed

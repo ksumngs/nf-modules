@@ -1,5 +1,5 @@
 - name: cliquesnv illuminavc test_cliquesnv_illuminavc
-  command: nextflow run tests/modules/cliquesnv/illuminavc -entry test_cliquesnv_illuminavc -c tests/config/nextflow.config
+  command: nextflow run tests/modules/ksumngs/cliquesnv/illuminavc -entry test_cliquesnv_illuminavc -c tests/config/nextflow.config
   tags:
     - cliquesnv/illuminavc
     - cliquesnv

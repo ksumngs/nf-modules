@@ -1,5 +1,5 @@
 - name: krakentools extract test_krakentools_extract
-  command: nextflow run tests/modules/krakentools/extract -entry test_krakentools_extract -c tests/config/nextflow.config
+  command: nextflow run tests/modules/ksumngs/krakentools/extract -entry test_krakentools_extract -c tests/config/nextflow.config
   tags:
     - krakentools
     - krakentools/extract

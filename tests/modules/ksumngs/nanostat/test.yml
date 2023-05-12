@@ -1,5 +1,5 @@
 - name: nanostat test_nanostat_fastq
-  command: nextflow run tests/modules/nanostat -entry test_nanostat_fastq -c tests/config/nextflow.config
+  command: nextflow run tests/modules/ksumngs/nanostat -entry test_nanostat_fastq -c tests/config/nextflow.config
   tags:
     - nanostat
   files:
@@ -7,7 +7,7 @@
       md5sum: a6d81f0bdface40aa73b9f5d0434f5ea
 
 - name: nanostat test_nanostat_summary
-  command: nextflow run tests/modules/nanostat -entry test_nanostat_summary -c tests/config/nextflow.config
+  command: nextflow run tests/modules/ksumngs/nanostat -entry test_nanostat_summary -c tests/config/nextflow.config
   tags:
     - nanostat
   files:
