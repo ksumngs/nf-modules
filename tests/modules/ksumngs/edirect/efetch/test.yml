@@ -1,5 +1,5 @@
 - name: edirect efetch test_edirect_efetch
-  command: nextflow run ./tests/modules/edirect/efetch -entry test_edirect_efetch -c ./tests/config/nextflow.config  -c ./tests/modules/edirect/efetch/nextflow.config
+  command: nextflow run ./tests/modules/ksumngs/edirect/efetch -entry test_edirect_efetch -c ./tests/config/nextflow.config  -c ./tests/modules/ksumngs/edirect/efetch/nextflow.config
   tags:
     - edirect/efetch
     - edirect
