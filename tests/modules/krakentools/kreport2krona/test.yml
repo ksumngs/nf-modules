@@ -1,8 +1,0 @@
-- name: krakentools kreport2krona test_krakentools_kreport2krona
-  command: nextflow run tests/modules/krakentools/kreport2krona -entry test_krakentools_kreport2krona -c tests/config/nextflow.config
-  tags:
-    - krakentools
-    - krakentools/kreport2krona
-  files:
-    - path: output/krakentools/test.krona
-      md5sum: a248a51b9a3e95d66beab757e5a775c9

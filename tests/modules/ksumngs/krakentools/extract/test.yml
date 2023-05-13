@@ -1,0 +1,28 @@
+- name: krakentools extract test_krakentools_extract
+  command: nextflow run tests/modules/ksumngs/krakentools/extract -entry test_krakentools_extract -c tests/config/nextflow.config
+  tags:
+    - krakentools
+    - krakentools/extract
+  files:
+    - path: output/kraken2/test.kraken.gz
+      md5sum: f5ff810bca47795bb38f525b08f76ad5
+    - path: output/kraken2/test.kreport
+      md5sum: 4227755fe40478b8d7dc8634b489761e
+    - path: output/kraken2/test_classified_1.fastq.gz
+      should_exist: true
+    - path: output/kraken2/test_classified_2.fastq.gz
+      should_exist: true
+    - path: output/kraken2/test_unclassified_1.fastq.gz
+      should_exist: true
+    - path: output/kraken2/test_unclassified_2.fastq.gz
+      should_exist: true
+    - path: output/kraken2/versions.yml
+      md5sum: 957b18a81052f2239489e690f197201e
+    - path: output/krakentools/test_filtered_R1.fastq.gz
+      md5sum: 875863b402f67403dac63ef59b9c9a8a
+    - path: output/krakentools/test_filtered_R2.fastq.gz
+      md5sum: 375aeb74819ca3d72203135ac80df78c
+    - path: output/krakentools/versions.yml
+      md5sum: 99d9d2e1df7f512cc45df3e0d45ce425
+    - path: output/untar/versions.yml
+      md5sum: ac305d4dad4fecb74fe7fe46df16a1eb

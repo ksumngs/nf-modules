@@ -1,0 +1,12 @@
+- name: cliquesnv illumina test_cliquesnv_illumina
+  command: nextflow run tests/modules/ksumngs/cliquesnv/illumina -entry test_cliquesnv_illumina -c tests/config/nextflow.config
+  tags:
+    - cliquesnv
+    - cliquesnv/illumina
+  files:
+    - path: output/cliquesnv/test.paired_end.fasta
+      md5sum: 9f61d3b7fce80b01c90d37677b6194fc
+    - path: output/cliquesnv/test.paired_end.json
+      md5sum: 1492e3cd0abe7572dc91006e8194fd44
+    - path: output/cliquesnv/versions.yml
+      md5sum: 6b8e02539a90b354a8316c39d8942767

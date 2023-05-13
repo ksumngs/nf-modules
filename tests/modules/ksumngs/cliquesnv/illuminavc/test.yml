@@ -1,0 +1,10 @@
+- name: cliquesnv illuminavc test_cliquesnv_illuminavc
+  command: nextflow run tests/modules/ksumngs/cliquesnv/illuminavc -entry test_cliquesnv_illuminavc -c tests/config/nextflow.config
+  tags:
+    - cliquesnv/illuminavc
+    - cliquesnv
+  files:
+    - path: output/cliquesnv/test.paired_end.vcf
+      md5sum: 096957274a78cd3d125c6aa2fe5ec0b2
+    - path: output/cliquesnv/versions.yml
+      md5sum: 40ceac94e8cff606abeaefc754ba9b28

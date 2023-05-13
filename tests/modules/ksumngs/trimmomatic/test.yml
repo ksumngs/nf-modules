@@ -1,0 +1,21 @@
+- name: trimmomatic test_trimmomatic_pe
+  command: nextflow run tests/modules/ksumngs/trimmomatic -entry test_trimmomatic_pe -c tests/config/nextflow.config
+  tags:
+    - trimmomatic
+  files:
+    - path: output/trimmomatic/test.log
+      md5sum: f04b51db3365f317c3ef02f7ad6967c9
+    - path: output/trimmomatic/test_trimmed_R1.fastq.gz
+      md5sum: 1af580083809f12bfecbb51b1fe409e1
+    - path: output/trimmomatic/test_trimmed_R2.fastq.gz
+      md5sum: adb1f37e0e3ab0b96e46e79abee8b715
+
+- name: trimmomatic test_trimmomatic_se
+  command: nextflow run tests/modules/ksumngs/trimmomatic -entry test_trimmomatic_se -c tests/config/nextflow.config
+  tags:
+    - trimmomatic
+  files:
+    - path: output/trimmomatic/test.log
+      md5sum: d9f3167b6636f1df69d21c55a2f7d435
+    - path: output/trimmomatic/test_trimmed.fastq.gz
+      md5sum: 988dc990c1d84e063505e0d0cadd744c

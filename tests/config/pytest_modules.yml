@@ -1,71 +1,71 @@
 cat/fastq:
-  - modules/cat/fastq/**
-  - tests/modules/cat/fastq/**
+  - modules/ksumngs/cat/fastq/**
+  - tests/modules/ksumngs/cat/fastq/**
 
 cliquesnv/consensusillumina:
-  - modules/cliquesnv/consensusillumina/**
-  - tests/modules/cliquesnv/consensusillumina/**
+  - modules/ksumngs/cliquesnv/consensusillumina/**
+  - tests/modules/ksumngs/cliquesnv/consensusillumina/**
 
 cliquesnv/illumina:
-  - modules/cliquesnv/illumina/**
-  - tests/modules/cliquesnv/illumina/**
+  - modules/ksumngs/cliquesnv/illumina/**
+  - tests/modules/ksumngs/cliquesnv/illumina/**
 
 cliquesnv/illuminavc:
-  - modules/cliquesnv/illuminavc/**
-  - tests/modules/cliquesnv/illuminavc/**
+  - modules/ksumngs/cliquesnv/illuminavc/**
+  - tests/modules/ksumngs/cliquesnv/illuminavc/**
 
 edirect/efetch:
-  - modules/edirect/efetch/**
-  - tests/modules/edirect/efetch/**
+  - modules/ksumngs/edirect/efetch/**
+  - tests/modules/ksumngs/edirect/efetch/**
 
 edirect/esearch:
-  - modules/edirect/esearch/**
-  - tests/modules/edirect/esearch/**
+  - modules/ksumngs/edirect/esearch/**
+  - tests/modules/ksumngs/edirect/esearch/**
 
 emboss/seqret:
-  - modules/emboss/seqret/**
-  - tests/modules/emboss/seqret/**
+  - modules/ksumngs/emboss/seqret/**
+  - tests/modules/ksumngs/emboss/seqret/**
 
 kraken2:
-  - modules/kraken2/**
-  - tests/modules/kraken2/**
+  - modules/ksumngs/kraken2/**
+  - tests/modules/ksumngs/kraken2/**
 
 krakentools/extract:
-  - modules/krakentools/extract/**
-  - tests/modules/krakentools/extract/**
+  - modules/ksumngs/krakentools/extract/**
+  - tests/modules/ksumngs/krakentools/extract/**
 
 krakentools/kreport2krona:
-  - modules/krakentools/kreport2krona/**
-  - tests/modules/krakentools/kreport2krona/**
+  - modules/ksumngs/krakentools/kreport2krona/**
+  - tests/modules/ksumngs/krakentools/kreport2krona/**
 
 krona/importtext:
-  - modules/krona/importtext/**
-  - tests/modules/krona/importtext/**
+  - modules/ksumngs/krona/importtext/**
+  - tests/modules/ksumngs/krona/importtext/**
 
 nanofilt:
-  - modules/nanofilt/**
-  - tests/modules/nanofilt/**
+  - modules/ksumngs/nanofilt/**
+  - tests/modules/ksumngs/nanofilt/**
 
 nanostat:
-  - modules/nanostat/**
-  - tests/modules/nanostat/**
+  - modules/ksumngs/nanostat/**
+  - tests/modules/ksumngs/nanostat/**
 
 raxmlng/bootstrap:
-  - modules/raxmlng/bootstrap/**
-  - tests/modules/raxmlng/bootstrap/**
+  - modules/ksumngs/raxmlng/bootstrap/**
+  - tests/modules/ksumngs/raxmlng/bootstrap/**
 
 raxmlng/parse:
-  - modules/raxmlng/parse/**
-  - tests/modules/raxmlng/parse/**
+  - modules/ksumngs/raxmlng/parse/**
+  - tests/modules/ksumngs/raxmlng/parse/**
 
 raxmlng/search:
-  - modules/raxmlng/search/**
-  - tests/modules/raxmlng/search/**
+  - modules/ksumngs/raxmlng/search/**
+  - tests/modules/ksumngs/raxmlng/search/**
 
 raxmlng/support:
-  - modules/raxmlng/support/**
-  - tests/modules/raxmlng/support/**
+  - modules/ksumngs/raxmlng/support/**
+  - tests/modules/ksumngs/raxmlng/support/**
 
 trimmomatic:
-  - modules/trimmomatic/**
-  - tests/modules/trimmomatic/**
+  - modules/ksumngs/trimmomatic/**
+  - tests/modules/ksumngs/trimmomatic/**

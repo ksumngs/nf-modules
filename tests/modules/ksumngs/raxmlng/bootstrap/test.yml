@@ -1,0 +1,10 @@
+- name: raxmlng bootstrap test_raxmlng_bootstrap
+  command: nextflow run tests/modules/ksumngs/raxmlng/bootstrap -entry test_raxmlng_bootstrap -c tests/config/nextflow.config
+  tags:
+    - raxmlng
+    - raxmlng/bootstrap
+  files:
+    - path: output/raxmlng/informative_sites.fas.raxml.bootstraps
+      md5sum: a358b727272abc17e6e91f5e478d3533
+    - path: output/raxmlng/versions.yml
+      md5sum: 004222421c28bf04d98bc8c3b84f45a5

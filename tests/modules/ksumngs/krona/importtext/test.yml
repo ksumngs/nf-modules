@@ -1,0 +1,11 @@
+- name: krona importtext test_krona_importtext
+  command: nextflow run tests/modules/ksumngs/krona/importtext -entry test_krona_importtext -c tests/config/nextflow.config
+  tags:
+    - krona
+    - krona/importtext
+  files:
+    - path: output/krona/krona.html
+      contains:
+        - '<krona collapse="true" key="true">'
+    - path: output/krona/versions.yml
+      md5sum: 7f2d871f3271b952a2227a5eabc1c692
